@@ -1,0 +1,70 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="linearlayout_height">80dp</dimen>
+    <dimen name="linearlayout_height_two">60dp</dimen>
+    <dimen name="login_button_height">60dp</dimen>
+    <dimen name="login_button_horizontal_margin">40dp</dimen>
+    <dimen name="linearlayout_left_margintop">10dp</dimen>
+    <dimen name="parent_listview_item_margin">10dp</dimen>
+    <dimen name="care_info_linearlayout_margintop">10dp</dimen>
+    <dimen name="care_info_linearlayout_height">200dp</dimen>
+
+
+    <!--parent_info_frag_inspectionreport-->
+    <dimen name="framelayout_margintop_radiogroup">10dp</dimen>
+    <dimen name="radiogroup_margintop">10dp</dimen>
+    <!--每个页面距离两边的距离固定20dp-->
+    <dimen name="everypage_margin_left_right">5dp</dimen>
+
+    <!--Activity.ParentInformationActivity-->
+    <!--其中第一个Lin距离四个边的距离-->
+    <dimen name="first_lineatlayout_margin">10dp</dimen>
+    <!--其余每个栏距离边界的距离-->
+    <dimen name="lineatlayout_padding_Left">10dp</dimen>
+    <!--内容栏距离标题的距离-->
+    <dimen name="lineatlayout_padding_top">10dp</dimen>
+    <!--按钮距离两边的距离-->
+    <dimen name="button_marginrightorleft">10dp</dimen>
+
+
+    <!--Activity.PhysicianOrderManagementDetailsActivity-->
+
+
+    <dimen name="lineatlayout_padding_around">10dp</dimen>
+
+
+    <!--Activity.InspectionReportDetailsActivity-->
+
+    <dimen name="lineatlayout_margin_around">10dp</dimen>
+    <dimen name="inspRep_lineatlayout_padding_top">10dp</dimen>
+
+    <dimen name="care_info_detail_height">760dp</dimen>
+
+    <!--Activity.BedActivity-->
+    <dimen name="button_margin_around">10dp</dimen>
+    <!--CompareView start-->
+    <dimen name="inspection_report_bottom_h">180dp</dimen>
+    <dimen name="inspection_report_img_h">40dp</dimen>
+
+    <dimen name="compare_view_h">120dp</dimen>
+    <dimen name="compare_item_layout_h">140dp</dimen>
+    <dimen name="compare_point_radius">2dp</dimen>
+    <dimen name="compare_bottom_vertical_line_height">5dp</dimen>
+    <dimen name="compare_bottom_text_margin_top">5dp</dimen>
+    <dimen name="compare_bottom_text_margin_left">10dp</dimen>
+    <dimen name="compare_text_size">10sp</dimen>
+    <!--CompareView end-->
+    <!--popup_window-->
+    <dimen name="width">150dp</dimen>
+    <dimen name="height">300dp</dimen>
+
+    <dimen name="care_info_unit_height">16dp</dimen>
+    <dimen name="care_info_unit_width">16dp</dimen>
+    <dimen name="care_info_title_width">96dp</dimen>
+    <dimen name="care_info_item_hight">30dp</dimen>
+    <dimen name="care_info_text_1">12dp</dimen>
+    <dimen name="care_info_text_2">15dp</dimen>
+
+</resources>

@@ -1,0 +1,244 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--定义无标题栏-->
+    <style name="AppTheme2" parent="Theme.AppCompat.Light.NoActionBar"></style>
+
+    <style name="bar_text">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <!--定义三级的textview的字体-->
+    <style name="SizeOne">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#505050</item>
+    </style>
+
+    <style name="SizeTwo">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#b4b4b4</item>
+    </style>
+
+    <style name="SizeTwo_way2">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#505050</item>
+    </style>
+
+
+    <style name="sp16Text">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="sp16Text_way1">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#b4b4b4</item>
+    </style>
+    <style name="sp16Text_way2">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#505050</item>
+    </style>
+
+
+
+    <style name="sp15Text">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="sp14Text">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SizeThree">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#505050</item>
+    </style>
+
+    <style name="SizeThree_way2">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#b4b4b4</item>
+    </style>
+
+    <style name="SizeFour">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#b4b4b4</item>
+    </style>
+
+    <style name="SizeFour_way2">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#505050</item>
+    </style>
+
+
+    <style name="SizeFive">
+        <item name="android:textSize">8sp</item>
+    </style>
+
+
+    <!--定义主界面左侧的四个布局文件-->
+
+    <style name="linearlayout_left">
+        <item name="android:layout_marginTop">@dimen/linearlayout_left_margintop</item>
+        <item name="android:focusable">true</item>
+
+    </style>
+
+    <!--定义popup-->
+    <style name="popupwindow_style">
+        <item name="android:windowEnterAnimation">@anim/popshow</item>
+        <item name="android:windowHideAnimation">@anim/pophideen</item>
+
+
+    </style>
+
+    <style name="notebookimageshow">
+        <item name="android:layout_width">20dp</item>
+        <item name="android:layout_height">20dp</item>
+    </style>
+    <!--定义主页的-->
+    <style name="controller_style">
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:textColor">@drawable/textcolor_selector</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+
+    </style>
+
+
+    <!--定义病人详细信息的RadioButton-->
+    <style name="controller_style_two">
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@drawable/textcolor_selector_two</item>
+        <item name="android:button">@null</item>
+
+    </style>
+
+
+    <!--定义医嘱管理的三个可选textview-->
+    <style name="OrderTextView">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/text_bak_change_selector</item>
+        <item name="android:textColor">@drawable/textcolor_selector_three</item>
+        <item name="android:textSize">16sp</item>
+
+
+    </style>
+
+
+    <!--定义医嘱管理的四个可选的checkbox-->
+
+    <style name="OrderRadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawableLeft">@drawable/radio_order</item>
+        <item name="android:textColor">@color/text_normal_color</item>
+        <item name="android:drawablePadding">4dp</item>
+
+
+    </style>
+    <!--定义医嘱管理的三个不可选的checkbox-->
+    <style name="OrderCheckBoxTwo">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">8sp</item>
+
+    </style>
+
+
+    <!--定义检验报告的两个radiobutton按钮风格-->
+
+    <style name="report_radiobutton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+
+    <!--定义检查报告第二层的标题栏text的风格-->
+    <style name="TextView_exam_report_title">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@color/item_bg_deep</item>
+        <item name="android:paddingLeft">@dimen/lineatlayout_padding_Left</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/title_text_color</item>
+
+    </style>
+
+
+    <!--定义检查报告第二层的内容栏text的风格1-->
+    <style name="TextView_exam_report_detial">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:paddingLeft">@dimen/lineatlayout_padding_Left</item>
+        <item name="android:paddingRight">@dimen/lineatlayout_padding_Left</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/colorblack</item>
+
+    </style>
+
+    <!--定义检查报告第二层的内容栏text的风格2-->
+    <style name="TextView_exam_report_detial_two">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:paddingTop">@dimen/lineatlayout_padding_top</item>
+        <item name="android:paddingLeft">@dimen/lineatlayout_padding_Left</item>
+        <item name="android:paddingRight">@dimen/lineatlayout_padding_Left</item>
+        <item name="android:textColor">@color/colorblack</item>
+
+    </style>
+
+    <!--定义检查报告第二层的内容栏text的风格3-->
+    <style name="TextView_exam_report_detial_three">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">@dimen/lineatlayout_padding_top</item>
+        <item name="android:paddingLeft">@dimen/lineatlayout_padding_Left</item>
+        <item name="android:paddingRight">@dimen/lineatlayout_padding_Left</item>
+        <item name="android:textColor">@color/colorblack</item>
+
+    </style>
+
+
+    <style name="careinfo_Dialog_MySch" parent="@android:style/Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:alpha">1.0</item>
+    </style>
+
+
+</resources>

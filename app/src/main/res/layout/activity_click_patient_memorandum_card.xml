@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.founder.ihospital_bdrm_doctor_station_offline.Activity.AddPatientNoteBookEvent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/titlecolor"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back_click_patient_memorandun_card"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/icon_back_white" />
+
+        <TextView
+            style="@style/bar_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="具体信息"
+            android:textColor="@color/white" />
+
+        <View
+            android:id="@+id/addPatientNoteBookSaveData"
+            style="@style/bar_text"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="5dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title_click_patient_memorandun_card"
+        style="@style/SizeTwo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/text_normal_color"
+        android:text="TUpian" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/border_gray"></LinearLayout>
+
+    <TextView
+        android:id="@+id/content_click_patient_memorandun_card"
+        style="@style/sp15Text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1"
+        android:gravity="start"
+        android:textColor="@color/text_light_color"
+        android:hint="这是点击卡片后显示的具体内容............................................" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addImageProAll_click_patient_memorandun_card"
+            style="@style/SizeThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="全部" />
+
+        <Button
+            android:id="@+id/addImageProImg_click_patient_memorandun_card"
+            style="@style/SizeThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="图片" />
+
+        <Button
+            android:id="@+id/addImageProViedo_click_patient_memorandun_card_click_patient_memorandun_card"
+            style="@style/SizeThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="视频" />
+
+        <Button
+            android:id="@+id/addImageProRadio_click_patient_memorandun_card_click_patient_memorandun_card"
+            style="@style/SizeThree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:text="录音" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridview_click_patient_memorandun_card"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_weight="1"
+        android:clickable="false"
+        android:horizontalSpacing="3dp"
+        android:numColumns="4"></GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/dottedline">
+
+    </LinearLayout>
+
+
+</LinearLayout>

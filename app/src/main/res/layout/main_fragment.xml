@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_base_bg"
+    android:orientation="vertical"
+    android:paddingRight="5dp"
+    android:paddingLeft="5dp"
+    android:paddingTop="5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/bg_top_semicircle"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="用户信息"
+                android:textColor="@color/title_text_color"
+                android:textSize="15sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_bottom_semicircle"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/welcome_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="欢迎："
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/welcome_txt_valus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/welcome_txt"
+                    android:text="测试-主任医师"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/keshi_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/welcome_txt"
+                    android:layout_marginTop="5dp"
+                    android:text="科室："
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/keshi_values"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/welcome_txt"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/keshi_txt"
+                    android:text="测试科室"
+                    android:textColor="@color/text_normal_color"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_top_semicircle"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="病区概况"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="15sp" />
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/refresh_iv"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@mipmap/nav_reload" />-->
+
+
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:id="@+id/main_fragment_frame"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_bottom_semicircle" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/bg_top_semicircle"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="最近查看患者"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="15sp" />
+
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/refresh_recently_patient"-->
+                    <!--android:layout_width="50dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:src="@mipmap/nav_reload" />-->
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@drawable/bg_bottom_semicircle">
+
+                <ScrollView
+                    android:id="@+id/child_scroll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    >
+
+                    <com.founder.ihospital_bdrm_doctor_station_offline.View.MyGridView
+                        android:id="@+id/recently_patitent_gv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:horizontalSpacing="10dp"
+                        android:numColumns="2"
+                        android:verticalSpacing="10dp"></com.founder.ihospital_bdrm_doctor_station_offline.View.MyGridView>
+
+                </ScrollView>
+
+
+                <com.founder.ihospital_bdrm_doctor_station_offline.View.NoClickRelativeLayout
+                    android:id="@+id/relativeLayout_background_patient_gv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <LinearLayout
+
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/wait_backgroud"
+                        android:gravity="center">
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyleLarge"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_gravity="center"
+                            android:indeterminateDrawable="@drawable/progressbar_rotate_mode2" />
+
+                    </LinearLayout>
+                </com.founder.ihospital_bdrm_doctor_station_offline.View.NoClickRelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="3"-->
+    <!--android:orientation="vertical">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--style="@style/SizeFour"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/titlecolor"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/hyqy"-->
+    <!--android:textColor="@color/colorWhite" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:orientation="horizontal">-->
+
+    <!--<TextView-->
+    <!--style="@style/SizeFour"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/titlecolor"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/qx"-->
+    <!--android:textColor="@color/colorWhite" />-->
+
+    <!--<TextView-->
+    <!--style="@style/SizeFour"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/titlecolor"-->
+    <!--android:gravity="center|left"-->
+    <!--android:text="主任医师"-->
+    <!--android:textColor="@color/colorWhite" />-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/main_fragment_frame"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="6"></FrameLayout>-->
+
+
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="4"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<TextView-->
+    <!--style="@style/SizeFour"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/titlecolor"-->
+    <!--android:gravity="center"-->
+    <!--android:text="@string/tz"-->
+    <!--android:textColor="@color/colorWhite" />-->
+
+    <!--<FrameLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="6"></FrameLayout>-->
+
+
+    <!--</LinearLayout>-->
+</LinearLayout>

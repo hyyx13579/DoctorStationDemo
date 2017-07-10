@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+
+        android:id="@+id/alldepartment_expand_listview_group_item_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:paddingLeft="10dp"
+        style="@style/SizeThree"
+        android:text="#"
+        android:background="@color/item_bg_deep"
+        />
+
+
+
+
+</LinearLayout>

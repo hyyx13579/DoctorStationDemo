@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <com.founder.ihospital_bdrm_doctor_station_offline.View.ShadowRelativeLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <RadioGroup
+                android:id="@+id/parent_frag_nurse_radiogruop"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="horizontal"
+                android:paddingBottom="18dp"
+                android:paddingLeft="27dp"
+                android:paddingRight="27dp"
+                android:paddingTop="15dp">
+
+                <RadioButton
+                    android:id="@+id/parent_frag_nurse_radiobtn_left"
+                    style="@style/report_radiobutton"
+                    android:background="@drawable/report_left"
+                    android:checked="true"
+                    android:text="近期"
+                    android:textColor="@color/item_bg" />
+
+                <RadioButton
+                    android:id="@+id/parent_frag_nurse_radiobtn_right"
+                    style="@style/report_radiobutton"
+                    android:background="@drawable/report_right"
+                    android:text="全部数据"
+                    android:textColor="@color/titlecolor" />
+
+
+            </RadioGroup>
+        </com.founder.ihospital_bdrm_doctor_station_offline.View.ShadowRelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.CoordinatorLayout
+                android:id="@+id/ll_shape_nurse_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/activity_base_bg"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:visibility="visible">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/sv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/care_info_linearlayout_height"
+                            android:layout_marginTop="@dimen/care_info_linearlayout_margintop"
+                            android:background="@drawable/shape_white_r6_bg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/SizeTwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="体温 (摄氏度)"
+                                android:textColor="@color/text_normal_color" />
+
+                            <com.founder.ihospital_bdrm_doctor_station_offline.View.BarGraphView
+                                android:id="@+id/parent_info_frag_four_frame_one"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp">
+
+                            </com.founder.ihospital_bdrm_doctor_station_offline.View.BarGraphView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/care_info_linearlayout_height"
+                            android:layout_marginTop="@dimen/care_info_linearlayout_margintop"
+                            android:background="@drawable/shape_white_r6_bg"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp">
+
+                                <TextView
+                                    style="@style/SizeTwo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="10dp"
+                                    android:gravity="center_vertical"
+                                    android:text="血压 (mmHg)"
+                                    android:textColor="@color/text_normal_color" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="10dp"
+                                    android:layout_toLeftOf="@+id/tv_hight_bloodpresure"
+                                    android:drawableRight="@drawable/shape_hight_bloodpresure"
+                                    android:text="高压"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/tv_hight_bloodpresure"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="20dp"
+                                    android:drawableRight="@drawable/shape_low_bloodpresure"
+                                    android:text="低压"
+                                    android:textSize="12sp" />
+
+
+                            </RelativeLayout>
+
+
+                            <com.founder.ihospital_bdrm_doctor_station_offline.View.BarGraphView
+                                android:id="@+id/parent_info_frag_four_frame_two"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="5dp">
+
+
+                            </com.founder.ihospital_bdrm_doctor_station_offline.View.BarGraphView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/care_info_linearlayout_height"
+                            android:layout_marginTop="@dimen/care_info_linearlayout_margintop"
+                            android:background="@drawable/shape_white_r6_bg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/SizeTwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="脉搏 (bpm)"
+                                android:textColor="@color/text_normal_color" />
+
+                            <com.founder.ihospital_bdrm_doctor_station_offline.View.BarGraphView
+                                android:id="@+id/parent_info_frag_four_frame_three"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp">
+
+
+                            </com.founder.ihospital_bdrm_doctor_station_offline.View.BarGraphView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/care_info_linearlayout_height"
+                            android:layout_marginTop="@dimen/care_info_linearlayout_margintop"
+                            android:background="@drawable/shape_white_r6_bg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/SizeTwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="血糖 (mmol/L)"
+                                android:textColor="@color/text_normal_color" />
+
+                            <com.founder.ihospital_bdrm_doctor_station_offline.View.BarGraphView
+                                android:id="@+id/parent_info_frag_four_frame_four"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp">
+
+                            </com.founder.ihospital_bdrm_doctor_station_offline.View.BarGraphView>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/care_info_linearlayout_height"
+                            android:layout_marginTop="@dimen/care_info_linearlayout_margintop"
+                            android:background="@drawable/shape_white_r6_bg"
+                            android:orientation="vertical">
+
+                            <TextView
+                                style="@style/SizeTwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:gravity="center_vertical"
+                                android:text="呼吸 (次/分)"
+                                android:textColor="@color/text_normal_color" />
+
+                            <com.founder.ihospital_bdrm_doctor_station_offline.View.BarGraphView
+                                android:id="@+id/parent_info_frag_four_frame_five"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp">
+
+                            </com.founder.ihospital_bdrm_doctor_station_offline.View.BarGraphView>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </android.support.v4.widget.NestedScrollView>
+
+
+                <android.support.design.widget.FloatingActionButton
+                    android:id="@+id/fab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left"
+                    android:layout_marginBottom="50dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@mipmap/nav_chart_three"
+                    app:backgroundTint="@color/titlecolor"
+                    app:layout_anchorGravity="bottom|right"
+                    app:layout_scrollFlags="scroll|enterAlways"
+                    app:layout_anchor="@+id/sv">
+
+                </android.support.design.widget.FloatingActionButton>
+
+
+            </android.support.design.widget.CoordinatorLayout>
+
+            <ExpandableListView
+                android:id="@+id/expandlv_nurse_fragmentl"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/activity_base_bg"
+                android:visibility="gone"></ExpandableListView>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_parent_3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/wait_backgroud"
+            android:gravity="center">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/progressbar_rotate_mode2" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

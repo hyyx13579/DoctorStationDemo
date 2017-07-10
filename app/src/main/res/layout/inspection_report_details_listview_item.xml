@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+
+    <TextView
+        android:id="@+id/id_insp_report_detais_lv_item"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:text="序号"
+        android:textColor="#505050"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/projectname_insp_report_detais_lv_item"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="检测项目"
+        android:textColor="#505050"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/resultvalue_insp_report_detais_lv_item"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="检测值"
+        android:textColor="#505050"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/referencenormal_insp_report_detais_lv_item"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="参考值"
+        android:textColor="#505050"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/result_insp_report_detais_lv_item"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="结果报告"
+        android:textColor="#505050"
+        android:textSize="14sp" />
+
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+            android:id="@+id/parent_frag_nine_sticklv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:divider="@null"
+            android:scrollbars="none">
+
+
+        </se.emilsjolander.stickylistheaders.StickyListHeadersListView>
+
+
+    </LinearLayout>
+
+
+    <com.founder.ihospital_bdrm_doctor_station_offline.View.NoClickRelativeLayout
+        android:id="@+id/relativeLayout_parent_9"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/wait_backgroud"
+            android:gravity="center">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/progressbar_rotate_mode2" />
+
+        </LinearLayout>
+    </com.founder.ihospital_bdrm_doctor_station_offline.View.NoClickRelativeLayout>
+
+
+</RelativeLayout>

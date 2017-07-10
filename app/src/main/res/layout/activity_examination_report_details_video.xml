@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.founder.ihospital_bdrm_doctor_station_offline.Activity.ExaminationReportDetailsVideoActivity">
+
+
+    <com.jude.rollviewpager.RollPagerView
+        android:id="@+id/loop_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:rollviewpager_play_delay="3000"
+        app:rollviewpager_show_control="true"
+        ></com.jude.rollviewpager.RollPagerView>
+
+
+</LinearLayout>

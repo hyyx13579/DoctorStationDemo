@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp">
+
+
+        <LinearLayout
+            android:id="@+id/order_linearlayout_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+
+            <TextView
+                android:id="@+id/order_tv_one"
+                style="@style/OrderTextView"
+                android:text="@string/orderAll"></TextView>
+
+            <TextView
+                android:id="@+id/order_tv_two"
+                style="@style/OrderTextView"
+                android:text="@string/orderLong"></TextView>
+
+            <TextView
+                android:id="@+id/order_tv_three"
+                style="@style/OrderTextView"
+                android:text="@string/orderShort"></TextView>
+
+
+        </LinearLayout>
+
+        <!--<RadioGroup-->
+        <!--android:layout_gravity="center"-->
+        <!--android:id="@+id/order_rgroup_rb"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginLeft="40dp"-->
+        <!--android:layout_marginRight="30dp"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/order_rb_one"-->
+        <!--style="@style/OrderRadioButton"-->
+        <!--android:checked="true"-->
+        <!--android:text="全部" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/order_rb_two"-->
+        <!--style="@style/OrderRadioButton"-->
+        <!--android:text="审核" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/order_rb_three"-->
+        <!--style="@style/OrderRadioButton"-->
+        <!--android:text="在执" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/order_rb_four"-->
+        <!--style="@style/OrderRadioButton"-->
+        <!--android:text="停止" />-->
+
+
+        <!--</RadioGroup>-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+
+            <LinearLayout
+                android:id="@+id/lin_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="医嘱状态:"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/doctor_isTerm_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="全部"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/lin_state"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="医嘱类型:"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/doctor_type_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="全部"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/doctor_select"
+                android:layout_width="60dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shape_gray_circle"
+                android:drawableRight="@mipmap/arr_down_xhdpi"
+                android:gravity="center"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="筛选"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@color/item_bg_deep">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center"
+                    android:text="开始时间"
+                    android:textColor="@color/title_text_color" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorWhite" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:gravity="center"
+                    android:text="内容"
+                    android:textColor="@color/title_text_color"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="8"
+                android:scrollbars="none">
+
+                <com.founder.ihospital_bdrm_doctor_station_offline.View.MyListView
+                    android:id="@+id/parent_frag_three_lv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null">
+
+
+                </com.founder.ihospital_bdrm_doctor_station_offline.View.MyListView>
+
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|center">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/physician_order_checking"
+                        android:drawablePadding="5dp"
+                        android:text="审核"
+                        android:textColor="@color/text_normal_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:drawableLeft="@drawable/physician_order_doing"
+                        android:drawablePadding="5dp"
+                        android:text="执行"
+                        android:textColor="@color/text_normal_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:drawableLeft="@drawable/physician_order_stop"
+                        android:drawablePadding="5dp"
+                        android:text="停止"
+                        android:textColor="@color/text_normal_color"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <com.founder.ihospital_bdrm_doctor_station_offline.View.NoClickRelativeLayout
+        android:id="@+id/relativeLayout_parent_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/wait_backgroud"
+            android:gravity="center">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/progressbar_rotate_mode2" />
+
+        </LinearLayout>
+    </com.founder.ihospital_bdrm_doctor_station_offline.View.NoClickRelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_base_bg"
+    tools:context="com.founder.ihospital_bdrm_doctor_station_offline.Activity.WardSelect_BedActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/titlecolor">
+
+            <ImageView
+                android:id="@+id/back_ward_select_bed"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@mipmap/icon_back_white" />
+
+            <TextView
+                style="@style/SizeOne"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:text="选择科室"
+                android:textColor="@color/colorWhite" />
+
+            <View
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp">
+
+            </View>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.founder.ihospital_bdrm_doctor_station_offline.View.ShadowRelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <RadioGroup
+
+                    android:id="@+id/rg_ward_select_bed"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="18dp"
+                    android:paddingLeft="27dp"
+                    android:paddingRight="27dp"
+                    android:paddingTop="15dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_one_ward_select_bed"
+                        style="@style/report_radiobutton"
+                        android:background="@drawable/report_left"
+                        android:checked="true"
+                        android:text="新院"
+                        android:textColor="@color/item_bg" />
+
+
+                    <RadioButton
+                        android:id="@+id/rb_two_ward_select_bed"
+                        style="@style/report_radiobutton"
+                        android:background="@drawable/report_med"
+                        android:text="老院"
+                        android:textColor="@color/titlecolor" />
+
+                    <RadioButton
+                        android:id="@+id/rb_three_ward_select_bed"
+                        style="@style/report_radiobutton"
+                        android:background="@drawable/report_right"
+                        android:text="海淀"
+                        android:textColor="@color/titlecolor" />
+
+
+                </RadioGroup>
+
+            </com.founder.ihospital_bdrm_doctor_station_offline.View.ShadowRelativeLayout>
+
+
+            <se.emilsjolander.stickylistheaders.StickyListHeadersListView
+                android:id="@+id/stick_lv_ward_select_bed"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="10"
+                android:scrollbars="none">
+
+
+            </se.emilsjolander.stickylistheaders.StickyListHeadersListView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rv_wardSelectBed"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#55000000"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/wait_backgroud"
+            android:gravity="center">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/progressbar_rotate_mode2" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

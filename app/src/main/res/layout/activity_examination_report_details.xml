@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_base_bg"
+    android:orientation="vertical"
+    tools:context="com.founder.ihospital_bdrm_doctor_station_offline.Activity.ExaminationReportDetailsActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@color/titlecolor">
+
+        <ImageView
+            android:id="@+id/back_examreport_details"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/icon_back_white" />
+
+        <TextView
+            android:id="@+id/title_examreport_details"
+            style="@style/SizeOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="贾某某"
+            android:textColor="@color/title_text_color" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp">
+
+
+        </View>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/first_lineatlayout_margin"
+            android:background="@mipmap/bg_card"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15dp"
+                        android:text="类型:"
+                        android:textColor="@color/item_card_text_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/type_examreport_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/item_card_text_color"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="申请日期:"
+                        android:textColor="@color/item_card_text_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/applydate_examreport_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/item_card_text_color"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15dp"
+                        android:text="位置:"
+                        android:textColor="@color/item_card_text_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/position_examreport_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/item_card_text_color"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="报告日期:"
+                        android:textColor="@color/item_card_text_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/reportdate_examreport_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/item_card_text_color"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="15dp"
+                        android:text="医生:"
+                        android:textColor="@color/item_card_text_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/doctorname_examreport_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:textColor="@color/item_card_text_color"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:text="报告人/审核人:"
+                        android:textColor="@color/item_card_text_color"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/applyname_reportname_examreport_details"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/item_card_text_color"
+                        android:textSize="15sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+
+            style="@style/TextView_exam_report_title"
+            android:text="检查参数"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/parameter_reportname_examreport_details"
+            style="@style/TextView_exam_report_detial"
+            android:layout_weight="1"
+            android:textColor="@color/text_normal_color"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/TextView_exam_report_title"
+            android:text="检查所见"
+            android:textSize="15sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/description_reportname_examreport_details"
+                style="@style/TextView_exam_report_detial_three"
+                android:textColor="@color/text_normal_color"
+                android:textSize="14sp"></TextView>
+
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextView_exam_report_title"
+            android:text="印象"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/impression_reportname_examreport_details"
+            style="@style/TextView_exam_report_detial_two"
+            android:layout_weight="4"
+            android:textColor="@color/text_normal_color"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/video_reportname_examreport_details"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/button_marginrightorleft"
+        android:layout_marginRight="@dimen/button_marginrightorleft"
+        android:layout_weight="1.5"
+        android:background="@drawable/examreport_chakan_button"
+        android:text="查看影像"
+        android:textColor="@color/title_text_color"
+        android:textSize="16sp"></Button>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+
+</LinearLayout>

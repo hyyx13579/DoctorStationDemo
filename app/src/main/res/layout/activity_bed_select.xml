@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.founder.ihospital_bdrm_doctor_station_offline.Activity.BedSelectActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/titlecolor">
+
+        <ImageView
+            android:id="@+id/back_bed_select"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/icon_back_white" />
+
+        <TextView
+            android:id="@+id/title_bed_select"
+            style="@style/SizeOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="选择床位"
+            android:textColor="@color/colorWhite" />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp">
+
+        </View>
+
+    </LinearLayout>
+
+    <ListView
+        android:scrollbars="none"
+        android:id="@+id/listview_bed_select"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        android:divider="@null"
+        android:dividerHeight="5dp"></ListView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

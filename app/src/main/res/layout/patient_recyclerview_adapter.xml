@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/patientNoteBookItemTitle"
+            style="@style/sp16Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="这里是备忘标题" />
+        <!-- 虚线 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/border_color" />
+
+        <TextView
+            android:id="@+id/patientNoteBookItemContent"
+            style="@style/sp15Text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="这里是患者的备忘内容 字号28磅最多显示一行......................" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <ImageView
+                    style="@style/notebookimageshow"
+                    android:src="@mipmap/icon_img_small" />
+
+                <TextView
+                    android:id="@+id/patientNoteBookItemImageNum"
+                    style="@style/sp14Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="11" />
+
+                <ImageView
+                    style="@style/notebookimageshow"
+                    android:src="@mipmap/icon_mic_small" />
+
+                <TextView
+                    android:id="@+id/patientNoteBookItemVideoNum"
+                    style="@style/sp14Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="22" />
+
+                <ImageView
+                    style="@style/notebookimageshow"
+                    android:src="@mipmap/icon_video_small" />
+
+                <TextView
+                    android:id="@+id/patientNoteBookItemRadioNum"
+                    style="@style/sp14Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="33" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/patientNoteBookItemSetTime"
+                    style="@style/sp14Text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:text="2012/03/03 14:20" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

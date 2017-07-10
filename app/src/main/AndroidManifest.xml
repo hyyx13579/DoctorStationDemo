@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.founder.ihospital_bdrm_doctor_station_offline">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application
+        android:name="com.founder.ihospital_bdrm_doctor_station_offline.app.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/rmyy"
+        android:label="人民医院离线版"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme2">
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.MainActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.LoginActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.AnesthesiaRecordImageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.MobileRoundsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.ParentInformationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.ExpendableListViewItemContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.AddPatientNoteBookEvent"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.ExaminationReportDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.ExaminationReportDetailsVideoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.PhysicianOrderManagementDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.InspectionReportDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.InspectionReportDetailsAnalysisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.ImageBucketChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.ImageZoomActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.ImageChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.BedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.MeetingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.SettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.VideoBucketChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.VideoChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.care_info.CareinfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.MeetingItemActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.WardSelect_BedActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.PatitentSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.SickRoomSelectActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.BedSelectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.founder.ihospital_bdrm_doctor_station_offline.zxing.android.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.ClickPatientMemorandumCardActivity" />
+        <activity android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.OperationActivity" />
+        <activity android:name="com.founder.ihospital_bdrm_doctor_station_offline.Activity.PathologicalReportItemActivity"></activity>
+    </application>
+
+</manifest>

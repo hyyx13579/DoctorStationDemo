@@ -1,0 +1,779 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SizeThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/titlecolor"
+                    android:gravity="center"
+                    android:text="基本信息"
+                    android:textColor="@color/colorWhite"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/item_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textColor="@color/text_light_color"
+                                android:text="@string/name" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:id="@+id/name_parent_info_frag_one"
+                                android:textColor="@color/text_normal_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="贾某某" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textColor="@color/text_light_color"
+                                android:text="@string/gender" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/gender_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="女" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:textColor="@color/text_light_color"
+                                android:text="@string/age" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/age_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="67岁" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/nation" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/nation_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="汉族" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/tel_num" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/tel_num_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="13800181338" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/marriage" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/marriage_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="未婚" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <TextView
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/text_light_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="证件号:" />
+
+                        <TextView
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/text_normal_color"
+                            android:id="@+id/id_card__parent_info_frag_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center|left"
+                            android:text="110101111111111111" />
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <TextView
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/text_light_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/occupation" />
+
+                        <TextView
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/text_normal_color"
+                            android:id="@+id/occupation_parent_info_frag_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center|left"
+                            android:text="程序猿" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <TextView
+                            android:paddingLeft="10dp"
+                            android:textColor="@color/text_light_color"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="@string/address" />
+
+                        <TextView
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/text_normal_color"
+                            android:id="@+id/address_parent_info_frag_one"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:gravity="center|left"
+                            android:text="北京市海淀区八宝山22312313号" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/contact_person" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/contact_person_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="贾某某" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/tel_num" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/contact_telnum_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="13131332221" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/activity_base_bg" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SizeThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/titlecolor"
+                    android:gravity="center"
+                    android:text="住院信息"
+                    android:textColor="@color/colorWhite"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/item_bg"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/bed_num" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/bed_num_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="001床" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/medicare_num" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/medicare_num_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="10169074800" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/hospital_num" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/hospital_num_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="629702" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/patient_num" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/patient_num_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="629702[1]" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="@string/inhospital_time" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/inhospital_time_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="2015-01-26" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="@string/hospitalized_day" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/inhospital_day_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="8天" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="@string/main_doctor" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/main_doctor_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="贾某某" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:text="@string/response_nurse" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/response_nurse_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="贾某某" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/activity_base_bg" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SizeThree"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@color/titlecolor"
+                    android:gravity="center"
+                    android:text="费用信息"
+                    android:textColor="@color/colorWhite"></TextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/item_bg"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/pay_method" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/payement_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="人" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/payment_type" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/payment_type_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="医保病人" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/prepaid_expense" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/prepaid_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="30000.00" />
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:textColor="@color/text_light_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center"
+                                android:text="@string/cost_expense" />
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:textColor="@color/text_normal_color"
+                                android:id="@+id/cost_expense_parent_info_frag_one"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="center|left"
+                                android:text="76119.41" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/activity_base_bg" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_parent_0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/wait_backgroud"
+            android:gravity="center">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/progressbar_rotate_mode2" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

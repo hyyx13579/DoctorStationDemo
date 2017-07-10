@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:oneshot="false">
+    <item android:drawable="@drawable/careinfo_bgloading1" android:duration="100"></item>
+    <item android:drawable="@drawable/careinfo_bgloading2" android:duration="100"></item>
+    <item android:drawable="@drawable/careinfo_bgloading3" android:duration="100"></item>
+    <item android:drawable="@drawable/careinfo_bgloading4" android:duration="100"></item>
+    <item android:drawable="@drawable/careinfo_bgloading5" android:duration="100"></item>
+    <item android:drawable="@drawable/careinfo_bgloading6" android:duration="100"></item>
+</animation-list>

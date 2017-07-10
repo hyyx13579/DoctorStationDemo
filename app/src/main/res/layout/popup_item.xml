@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:textColor="@color/text_normal_color"
+        android:gravity="center"
+        android:id="@+id/name_item"
+        style="@style/SizeOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="HelloWord"/>
+
+</LinearLayout>

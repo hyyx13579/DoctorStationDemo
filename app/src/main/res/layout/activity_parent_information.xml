@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/activity_base_bg"
+    tools:context="com.founder.ihospital_bdrm_doctor_station_offline.Activity.ParentInformationActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/titlecolor">
+
+        <ImageView
+            android:id="@+id/back_parent_info"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/icon_back_white" />
+
+        <TextView
+            android:id="@+id/titleName_parent_info"
+            style="@style/SizeOne"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:text="贾某某"
+            android:textColor="@color/colorWhite" />
+
+
+        <ImageView
+            android:id="@+id/addPatientNoteBookEvent"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/nav_reload" />
+
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_paremt_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10" />
+
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:background="@color/border_color" />-->
+
+    <HorizontalScrollView
+        android:id="@+id/horscro_parent_info"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/shadow"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/rbgroup_parent_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/bottom_indicate_1_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/bottom_indicate_1_img"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/basic_infor_btn" />
+
+                <TextView
+                    android:id="@+id/bottom_indicate_1_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jbxx"
+                    android:textColor="@color/titlecolor"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_indicate_2_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/bottom_indicate_2_img"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/elec_case_btn" />
+
+                <TextView
+                    android:id="@+id/bottom_indicate_2_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dzbl"
+                    android:textColor="@color/titlecolor"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_indicate_3_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/bottom_indicate_3_img"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/phy_order_btn" />
+
+                <TextView
+                    android:id="@+id/bottom_indicate_3_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yzgl"
+                    android:textColor="@color/titlecolor"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_indicate_4_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/bottom_indicate_4_img"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/nurse_infor_btn" />
+
+                <TextView
+                    android:id="@+id/bottom_indicate_4_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hlxx"
+                    android:textColor="@color/titlecolor"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_indicate_5_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/bottom_indicate_5_img"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/inspec_report_btn" />
+
+                <TextView
+                    android:id="@+id/bottom_indicate_5_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jybg"
+                    android:textColor="@color/titlecolor"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_indicate_6_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/bottom_indicate_6_img"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/exam_report_btn" />
+
+                <TextView
+                    android:id="@+id/bottom_indicate_6_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/jcbg"
+                    android:textColor="@color/titlecolor"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/bottom_indicate_9_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/bottom_indicate_9_img"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/pathological_report_btn" />
+
+                <TextView
+                    android:id="@+id/bottom_indicate_9_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blbg"
+                    android:textColor="@color/titlecolor"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:id="@+id/bottom_indicate_7_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:id="@+id/bottom_indicate_7_img"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/anthesia_record_btn" />
+
+                <TextView
+                    android:id="@+id/bottom_indicate_7_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mzjl"
+                    android:textColor="@color/titlecolor"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_indicate_8_ly"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/bottom_indicate_8_img"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/memory_btn" />
+
+                <TextView
+                    android:id="@+id/bottom_indicate_8_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/hzbw"
+                    android:textColor="@color/titlecolor"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--<RadioGroup-->
+        <!--android:id="@+id/rbgroup_parent_info"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/rb_parent_info_one"-->
+        <!--style="@style/controller_style_two"-->
+        <!--android:checked="true"-->
+        <!--android:drawableTop="@drawable/basic_infor_btn"-->
+        <!--android:text="@string/jbxx" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/rb_parent_info_two"-->
+        <!--style="@style/controller_style_two"-->
+        <!--android:drawableTop="@drawable/elec_case_btn"-->
+        <!--android:text="@string/dzbl" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/rb_parent_info_three"-->
+        <!--style="@style/controller_style_two"-->
+        <!--android:drawableTop="@drawable/phy_order_btn"-->
+        <!--android:text="@string/yzgl" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/rb_parent_info_four"-->
+        <!--style="@style/controller_style_two"-->
+        <!--android:drawableTop="@drawable/nurse_infor_btn"-->
+        <!--android:text="@string/hlxx" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/rb_parent_info_five"-->
+        <!--style="@style/controller_style_two"-->
+        <!--android:drawableTop="@drawable/inspec_report_btn"-->
+        <!--android:text="@string/jybg" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/rb_parent_info_six"-->
+        <!--style="@style/controller_style_two"-->
+        <!--android:drawableTop="@drawable/exam_report_btn"-->
+        <!--android:text="@string/jcbg" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/rb_parent_info_seven"-->
+        <!--style="@style/controller_style_two"-->
+        <!--android:drawableTop="@drawable/anthesia_record_btn"-->
+        <!--android:text="@string/mzjl" />-->
+
+        <!--<RadioButton-->
+        <!--android:id="@+id/rb_parent_info_eight"-->
+        <!--style="@style/controller_style_two"-->
+        <!--android:drawableTop="@drawable/memory_btn"-->
+        <!--android:text="@string/hzbw" />-->
+
+
+        <!--</RadioGroup>-->
+
+
+    </HorizontalScrollView>
+
+
+</LinearLayout>

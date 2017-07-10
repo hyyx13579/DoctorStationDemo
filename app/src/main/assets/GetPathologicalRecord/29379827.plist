@@ -1,0 +1,141 @@
+{
+  "Status": 1,
+  "Values": [
+    {
+      "CheckMethod": null,
+      "Conclusion": "（腹水）涂片：可见多量间皮细胞、淋巴细胞及红细胞，数个中性粒细胞。",
+      "ReportDoctor": "郑红芳",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2015-08-19 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸水）涂片：可见多量组织细胞，少量间皮细胞及淋巴细胞，散在红细胞，数个嗜酸性粒细胞及中性粒细胞、",
+      "ReportDoctor": "杨菲",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-02-14 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸腔积液）涂片：可见大量红细胞，多量组织细胞及间皮细胞，少量淋巴细胞，个别中性粒细胞。其间见数团细胞核深染、略大，小团状排列，考虑为增生的间皮细胞可能性大，请结合临床，必要时再送检。免疫化学染色结果：CK（+），Calretinin（+），D2-40（数个细胞+），CD68（+），TTF-1（-），NapsinA（-），CEA（-），AFP（-），肝细胞（-）。",
+      "ReportDoctor": "郑红芳",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-01-27 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸腔积液）涂片：可见大量的中性粒细胞，多量红细胞，少量间皮细胞及组织细胞，个别淋巴细胞。",
+      "ReportDoctor": "杨菲",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-01-29 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（右侧胸水）涂片：可见多量间皮细胞、组织细胞及红细胞，少量淋巴细胞，个别中性粒细胞。其间见个别细胞呈小团状排列，考虑为增生的间皮细胞。",
+      "ReportDoctor": "秦云",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-01-28 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸水）涂片：可见大量红细胞，多量组织细胞，少量间皮细胞、淋巴细胞及嗜酸性粒细胞，散在中性粒细胞。其间见散在少量呈小团状排列的深染细胞，细胞核略大，核浆比尚可，考虑为高度增生的间皮细胞，请结合临床，必要时进一步检查。",
+      "ReportDoctor": "郑红芳",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-02-03 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸水）涂片：可见大量红细胞，多量淋巴细胞，少量间皮细胞及组织细胞，个别中性粒细胞。",
+      "ReportDoctor": "杨菲",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-02-15 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸水）涂片：可见大量红细胞，多量间皮细胞、组织细胞，少量淋巴细胞及中性粒细胞。",
+      "ReportDoctor": "杨菲",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-03-14 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸水）涂片：可见多量红细胞，少量间皮细胞、组织细胞及淋巴细胞，个别中性粒细胞。",
+      "ReportDoctor": "郑红芳",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-04-01 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸水）涂片：可见大量红细胞，多量组织细胞，少量中性粒细胞、淋巴细胞及间皮细胞。少数细胞核深染，小团状排列，考虑为增生的间皮细胞。",
+      "ReportDoctor": "杨菲",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-03-15 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸水）涂片：血性背景中可见多量退变的间皮细胞及组织细胞，少量淋巴细胞，散在中性粒细胞及嗜酸性粒细胞。其间见少数细胞核深染，体积不大，小团状排列，考虑为增生的间皮细胞可能性大。请结合临床，必要时再送检。",
+      "ReportDoctor": "高松源",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-04-11 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸水）涂片：血性背景中可见多量退变的间皮细胞及淋巴细胞，数个中性粒细胞。",
+      "ReportDoctor": "高松源",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-04-19 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸水）涂片：可见大量红细胞，少量间皮细胞、组织细胞、淋巴细胞、中性粒细胞及嗜酸性粒细胞。",
+      "ReportDoctor": "高松源",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-05-06 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（左侧胸腔积液）涂片：血性背景中可见多量组织细胞，少量间皮细胞及淋巴细胞，个别中性粒细胞。其间见个别呈小团状排列的深染细胞，结合C-67220，考虑为增生的间皮细胞可能性大。",
+      "ReportDoctor": "高松源",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-06-08 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸水）涂片：血性背景中可见多量组织细胞，少量间皮细胞、淋巴细胞及中性粒细胞。部分细胞呈小团状排列，体积不大，考虑为增生的间皮细胞可能性大。",
+      "ReportDoctor": "高松源",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-05-30 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸腔积液）涂片及离心沉淀包埋切片：血性背景中可见大量组织细胞，少量间皮细胞、淋巴细胞及中性粒细胞。其间见少数细胞核深染，小团状排列，结合免疫化学染色结果：CK7（+），CK20（-），Calretinin（+），D2-40（+），AFP（-），CEA（+/-），TTF-1（-），NapsinA（-），P53（-），Ki-67（-），考虑为增生的间皮细胞可能性大。请结合临床。",
+      "ReportDoctor": "高松源",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-06-06 00:00:00",
+      "ItemName": "病理"
+    },
+    {
+      "CheckMethod": null,
+      "Conclusion": "（胸水）涂片：可见多量中性粒细胞及红细胞，少量组织细胞、间皮细胞及淋巴细胞。",
+      "ReportDoctor": "高松源",
+      "AuditingDoctor": "郑红芳",
+      "ReportDate": "2016-05-12 00:00:00",
+      "ItemName": "病理"
+    }
+  ]
+}

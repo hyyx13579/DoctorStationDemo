@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/activity_base_bg" />
+
+    <TextView
+        android:id="@+id/stick_lv_header_item_tv"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/titlecolor"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="2016-3-28 [3项]"
+        android:textColor="@color/colorWhite"
+        android:textSize="16sp"
+        android:typeface="sans" />
+
+
+</LinearLayout>

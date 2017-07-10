@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/border_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="医嘱状态"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ppw_select_isTerm_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/ppw_select_isTerm_all_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_circle_noclick"
+                    android:gravity="center"
+                    android:text="全部"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ppw_select_isTerm_shenhe_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_circle_noclick"
+                    android:gravity="center"
+                    android:text="审核"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ppw_select_isTerm_zaizhi_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_circle_noclick"
+                    android:gravity="center"
+                    android:text="在执"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ppw_select_isTerm_stop_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_circle_noclick"
+                    android:gravity="center"
+                    android:text="停止"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="医嘱类型"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/ppw_select_type_one_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/ppw_select_type_all_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_circle_noclick"
+                    android:gravity="center"
+                    android:text="全部"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ppw_select_type_yaopinzhiliao_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_circle_noclick"
+                    android:gravity="center"
+                    android:text="药品治疗"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ppw_select_type_jianyanjiancha_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_circle_noclick"
+                    android:gravity="center"
+                    android:text="检验检查"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+
+                <TextView
+                    android:id="@+id/ppw_select_type_shoushumazui_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_circle_noclick"
+                    android:gravity="center"
+                    android:text="手术麻醉"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ppw_select_type_hulishanshi_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_circle_noclick"
+                    android:gravity="center"
+                    android:text="护理膳食"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/ppw_select_type_qita_tv"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/shape_gray_circle_noclick"
+                    android:gravity="center"
+                    android:text="其他"
+                    android:textSize="14sp" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/border_color" />
+
+
+        <TextView
+            android:id="@+id/ppw_select_sure_tv"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:text="确定"
+            android:textSize="16sp"
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/ppw_select_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:background="@color/text_normal_color" />
+
+
+</LinearLayout>
